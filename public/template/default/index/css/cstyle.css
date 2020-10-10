@@ -1,0 +1,62 @@
+/* 头部 */
+.btn-secondary:hover {
+  border: none;
+}
+.btn-secondary {
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.downcontent {
+  position: absolute !important;
+  top: 20% !important;
+  right: 13% !important;
+}
+.btn {
+  font-size: 18px !important;
+}
+/* banner */
+.banner_title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.banner_title p {
+  font-size: 36px;
+}
+.banner_title h1 {
+  font-size: 60px;
+  color: #fff;
+}
+.banner_title h1 > span {
+  color: #0852a2;
+}
+.banner_title > span {
+  font-size: 36px;
+}
+/* 推荐仪器展示 */
+.swiper_content img {
+  width: 100%;
+}
+.wrapper_content > div {
+  background: url(../img/bg/juxing.png);
+}
+.text1 {
+  padding: 0 20px 20px 20px;
+}
+.text1 p {
+  color: #383838;
+}
+
+/* 企业新闻 */
+.slidnew {
+  padding-top: 20px;
+}
+.titlee {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+/* 企业新闻over */

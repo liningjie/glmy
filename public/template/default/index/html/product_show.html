@@ -1,0 +1,702 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$title}--{$system.key}</title>
+    <link href="{$public}css/producter/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{$public}css/iconfont.css" />
+    <link href="{$public}css/productdetail.css" rel="stylesheet" />
+    <style></style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="{$public}css/iconfont.css" />
+    <link rel="stylesheet" href="{$public}css/responsive.css" />
+    <link rel="stylesheet" href="{$public}css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{$public}css/leftMenu.css" />
+    <style>
+      .martop {
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+      }
+
+      .martop .logo {
+        display: inline-block;
+        width: 116px;
+        margin-left: 60px;
+      }
+
+      .martop .logo img {
+        width: 100%;
+      }
+
+      .topnav {
+        font-size: 15px;
+        color: #fff;
+        /*position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;*/
+        height: 100%;
+        float: right;
+        margin-bottom: 0;
+      }
+
+      .topnav li {
+        display: inline-block;
+        width: 120px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+        text-align: center;
+        height: 100%;
+        line-height: 57px;
+        box-sizing: border-box;
+      }
+      /*.topnav li:nth-child(7){
+             border-right:1px solid #fff;
+         }*/
+      .topnav li a {
+        color: #fff;
+      }
+
+      .topnav li:hover {
+        border-bottom: 3px solid #33ccff;
+        background: rgba(51, 204, 255, 0.3);
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+
+      .topnav li a:hover {
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+
+      .navsearch {
+        display: inline-block;
+        float: right;
+        height: 100%;
+        color: #fff;
+        margin-right: 50px;
+        /*line-height: 60px;*/
+      }
+
+      .navsearch .iconfont {
+        font-size: 20px;
+      }
+
+      /* reset webkit search input browser style */
+      input {
+        outline: none;
+      }
+
+      input[type="search"] {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        font-family: inherit;
+        font-size: 100%;
+      }
+
+      input::-webkit-search-decoration,
+      input::-webkit-search-cancel-button {
+        display: none; /* remove the search and cancel icon */
+      }
+
+      /* search input field */
+      input[type="search"] {
+        background: #ededed url("{$public}img/search-icon.png") no-repeat 4px
+          center;
+        border: solid 1px #ccc;
+        padding: 1px 3px 1px 30px;
+        width: 55px;
+        -webkit-border-radius: 10em;
+        -moz-border-radius: 10em;
+        border-radius: 10em;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+
+      input[type="search"]:focus {
+        width: 130px;
+        background-color: #fff;
+        border-color: #6dcff6;
+        -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+        -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+        box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+      }
+
+      /* placeholder */
+      input:-moz-placeholder {
+        color: #999;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #999;
+      }
+
+      /* demo B */
+      input[type="search"] {
+        width: 14px;
+        padding-left: 10px;
+        color: transparent;
+        cursor: pointer;
+      }
+
+      input[type="search"]:hover {
+        background-color: #fff;
+      }
+
+      input[type="search"]:focus {
+        width: 130px;
+        padding-left: 32px;
+        color: #000;
+        background-color: #fff;
+        cursor: auto;
+      }
+
+      input:-moz-placeholder {
+        color: transparent;
+      }
+
+      input::-webkit-input-placeholder {
+        color: transparent;
+      }
+
+      .shuxian {
+        width: 1px;
+        height: 30px;
+        background: #fff;
+        display: inline-block;
+        /*vertical-align: -16%;*/
+        margin: 15px 20px 0 0;
+      }
+      .searchyuan {
+        display: inline-block;
+        vertical-align: 43%;
+      }
+      .topnav .liactive {
+        border-bottom: 3px solid #33ccff;
+        background: rgba(51, 204, 255, 0.3);
+      }
+      @media only screen and (max-width: 480px) {
+        .content {
+          display: none;
+        }
+      }
+    </style>
+    <div class="martop">{include file="common/header"/}</div>
+    <div style="clear: both"></div>
+    <div class="tabtop" style="margin-top: 60px">
+      <ul class="tab">
+        <li class="cur">
+          <a href="{tp:cate id='23' type='url'/}"
+            >{tp:cate id='23' type='cate_name'/}</a
+          >
+        </li>
+        <li class="">
+          <a href="{tp:cate id='24' type='url'/}"
+            >{tp:cate id='24' type='cate_name'/}</a
+          >
+        </li>
+        <li class="">
+          <a href="{tp:cate id='25' type='url'/}"
+            >{tp:cate id='25' type='cate_name'/}</a
+          >
+        </li>
+        <li class="">
+          <a href="{tp:cate id='26' type='url'/}"
+            >{tp:cate id='26' type='cate_name'/}</a
+          >
+        </li>
+        <li class="">
+          <a href="{tp:cate id='27' type='url'/}"
+            >{tp:cate id='27' type='cate_name'/}</a
+          >
+        </li>
+        <li class="">
+          <a href="{tp:cate id='28' type='url'/}"
+            >{tp:cate id='28' type='cate_name'/}</a
+          >
+        </li>
+        <li class="">
+          <a href="{tp:cate id='29' type='url'/}"
+            >{tp:cate id='29' type='cate_name'/}</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="bg1">
+      <div style="width: 1200px; margin: 0 auto" class="cont">
+        <div class="left" style="">
+          <img
+            src="{$info.image}"
+            width="600"
+          />
+        </div>
+        <div class="right">
+          <div class="tit">{$info.keywords}</div>
+          <div class="content">
+            <p>{$info.summary}<br /></p>
+            <br />
+          </div>
+          <div class="tubiao">
+            <ul>
+              <li>
+                <a href="#cp">
+                  <img
+                    class="iconone"
+                    src="{$public}img/productdetail/whitecpgs.png"
+                  />
+
+                  <div class="yanse">产品概述</div>
+                </a>
+              </li>
+              <li>
+                <a href="#jscs">
+                  <img
+                    class="icontwo"
+                    src="{$public}img/productdetail/whitejscs.png"
+                  />
+                  <div class="yanse">技术参数</div>
+                </a>
+              </li>
+              <li>
+                <a href="#yyly">
+                  <img
+                    class="iconthree"
+                    src="{$public}img/productdetail/whiteyyly.png"
+                  />
+                  <div class="yanse">应用领域</div>
+                </a>
+              </li>
+              <li>
+                <a href="{$info.download}" target="_blank">
+                  <img
+                    class="iconfour"
+                    src="{$public}img/productdetail/whitewdxz.png"
+                  />
+                  <div class="yanse">文档下载</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="bg2" id="cp">
+      <div class="box">
+        <div class="yi">
+          <div class="name">
+            <div style="font-size: 20px">产品概述</div>
+            <div style="color: #666">PRODUCT OVERVIEW</div>
+          </div>
+        </div>
+
+        <div class="oneimg">
+          <div class="left">
+            <div class="er">
+              <div class="dahao">01</div>
+              <div class="name1">
+                <div style="font-size: 16px">产品特点</div>
+                <div style="color: #666">PRODUCT FEATURES</div>
+              </div>
+            </div>
+            <p>{$info.content|raw}</p>
+          </div>
+          <div class="right">
+            <img src="{$info.picture1}" />
+          </div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="dongtu">
+          <img src="{$public}img/productdetail/xiangxia.png" />
+        </div>
+        <div class="twoimg">
+          <div class="left">
+            <img src="{$info.picture2}" />
+          </div>
+          <div class="right">
+            <div class="er">
+              <div class="dahao">02</div>
+              <div class="name1" style="margin-left: 0">
+                <div style="font-size: 16px">产品优势</div>
+                <div style="color: #666">PRODUCT ADVANTAGE</div>
+              </div>
+            </div>
+            <p>{$info.content2|raw}</p>
+          </div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="dongtu">
+          <img src="{$public}img/productdetail/xiangxia.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg3" id="jscs">
+      <div class="box">
+        <div class="yi" style="margin: 10px 0 30px 0">
+          <div class="name">
+            <div style="font-size: 20px; color: #fff">技术参数</div>
+            <div style="color: #fff">TECHNICAL PARAMETERS</div>
+          </div>
+        </div>
+        <div class="left">
+          <p>{$info.parameter|raw}</p>
+        </div>
+        <div class="right">
+          <img class="lastimg" src="{$info.picture3}" />
+        </div>
+        <div style="clear: both"></div>
+      </div>
+    </div>
+
+    <div class="bg4" id="yyly">
+      <div class="box">
+        <div class="dongtu" style="margin-top: 30px; margin-bottom: 40px">
+          <img src="{$public}img/productdetail/xiangxia.png" />
+        </div>
+        <div class="yi" style="margin: 10px 0 30px 0">
+          <div class="name">
+            <div style="font-size: 20px">应用领域</div>
+            <div>APPLICATION AREA</div>
+          </div>
+        </div>
+        <div class="bg5">
+          <ul>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/yj.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/zz.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/jx.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/qc.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/hk.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/bq.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="{$public}img/productdetail/js.png" />
+                <p>冶金<span>Metallurgy</span></p>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <img src="{$public}img/productdetail/dian.png" />
+          </div>
+        </div>
+        <div class="dspnone">
+          <div class="yuantu1">
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/yj.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    冶金 <br />
+                    Metallurgy
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/zz.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    铸造 <br />
+                    Casting
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/jx.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    机械 <br />
+                    Mechanics
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/hk.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    汽车制造 <br />
+                    Car making
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="yuantu2">
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/hk.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    航天航空 <br />
+                    Aerospace
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/bq.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    兵器 <br />
+                    Weapon
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/js.png" />
+              <div class="yincang">
+                <div class="ycbox">
+                  <div class="wenzibox">
+                    金属加工 <br />
+                    Metalworking
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="yuantu2">
+            <div class="xiaotubox">
+              <img src="{$public}img/productdetail/dian.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      section.space-sm,
+      footer.space-sm {
+        padding-top: 2.5em;
+        padding-bottom: 0;
+      }
+
+      .cxfooter {
+        /*height: 500px;*/
+        background: #183954;
+        color: #fff;
+      }
+
+      .cxfooter .pjfrow {
+        width: 1300px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-between;
+        cursor: default;
+      }
+      .cxfooter .pjfrow ul {
+        width: 100%;
+      }
+      .cxfooter .pjfrow ul li {
+        display: inline-block;
+        width: 24%;
+        border-right: 1px solid #fff;
+        position: relative;
+        height: 80px;
+        text-align: center;
+      }
+      .cxfooter .pjfrow ul li:last-child {
+        border-right: none;
+      }
+      .cxfooter .pjfrow ul li .zjhz {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        text-align: center;
+      }
+      .cxfooter .pjfrow ul li .zjhz .iconfont {
+        font-size: 40px;
+        margin-right: 10px;
+      }
+      /*.cxfooter .pjfrow .pjf {
+                width: 280px;
+                display: inline-block;
+                height: 130px;
+                border-radius: 10px;
+                position: relative;
+                -webkit-transition: all 300ms linear;
+                -moz-transition: all 300ms linear;
+                -o-transition: all 300ms linear;
+                -ms-transition: all 300ms linear;
+                transition: all 300ms linear;
+            }
+
+                .cxfooter .pjfrow .pjf:hover {
+                    transform: scale(1.1);
+                    -webkit-transition: all 300ms linear;
+                    -moz-transition: all 300ms linear;
+                    -o-transition: all 300ms linear;
+                    -ms-transition: all 300ms linear;
+                    transition: all 300ms linear;
+                }
+                .cxfooter .pjfrow .pjf span{
+                    float:left;
+                }
+                .cxfooter .pjfrow .pjf i {
+                    font-size: 40px;
+                }*/
+
+      .cxfooter .pjfrow .pjf .cxinfo {
+        /*line-height: 130px;*/
+        font-size: 14px;
+        text-align: center;
+      }
+
+      /*.cxfooter .pjfrow .pjf .cxleft {
+                    font-size: 14px;
+                    text-align: center;
+                    float: left;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                }
+
+                .cxfooter .pjfrow .pjf .cxright {
+                    font-size: 14px;
+                    text-align: center;
+                    float: right;
+                    margin-top: 15px;
+                    margin-right: 15px;
+                }*/
+
+      .cxfooter .yqlj a {
+        color: #999;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .cxfooter .yqlj a:hover {
+        color: #fff;
+      }
+
+      .cxfooter .yqlj {
+        font-size: 14px;
+        color: #999;
+        width: 1200px;
+        margin: 60px auto 40px auto;
+        text-align: center;
+      }
+
+      .indfooter {
+        font-size: 14px;
+        text-align: center;
+        color: #999;
+        background: #000;
+        padding: 20px 0;
+      }
+      .indfooter p {
+        display: inline-block;
+      }
+      .indfooter a {
+        color: #999;
+      }
+      .indfooter a:hover {
+        color: #fff;
+      }
+      .cxfooter {
+        padding-bottom: 0;
+      }
+      .cxleft {
+        float: left;
+        text-align: left;
+        /*line-height:68px;*/
+      }
+      .cxleft div {
+        line-height: 20px;
+      }
+      .cxleft .kaozuo {
+        text-align: left;
+        padding-top: 10px;
+      }
+      .diyige p {
+        margin-bottom: 0;
+      }
+    </style>
+
+    <div class="Hfooter">{include file="common/footer"/}</div>
+    <script>
+      //支持Enter键登录
+      document.onkeydown = function (e) {
+        if (!e) e = window.event;
+        if (e.keyCode === 13 || e.which === 13) {
+          if ($("#search_txt").val() !== "") {
+            location.href = "/PC/NewsSearch?txt=" + $("#search_txt").val();
+          }
+        }
+      };
+    </script>
+
+    <script src="{$public}js/jquery-1.11.3.min.js"></script>
+    <script src="{$public}js/leftMenu.js"></script>
+    <script>
+      $(".topnav li").eq(1).addClass("liactive");
+      //console.log($(".tubiao").offset().top)
+      if ($(".tubiao").offset().top > 550) {
+        $(".iconone").attr("src", "{$public}img/productdetail/whitecpgs.png");
+        $(".icontwo").attr("src", "{$public}img/productdetail/whitejscs.png");
+        $(".iconthree").attr("src", "{$public}img/productdetail/whiteyyly.png");
+        $(".iconfour").attr("src", "{$public}img/productdetail/whitewdxz.png");
+        $(".yanse").css("color", "#42bed4");
+      }
+    </script>
+    <script>
+      // 导航按钮
+      $(function ($) {
+        $("#menu")
+          .leftMenu({
+            triggerBtn: ".btn",
+          })
+          .init();
+      });
+    </script>
+  </body>
+</html>

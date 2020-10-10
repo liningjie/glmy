@@ -1,0 +1,79 @@
+          <div class="logo">
+            <img src="{$public}img/logo.png" />
+          </div>
+
+            <div class="navsearch">
+               <form  action="{:url('index/search')}"  method="GET">
+              <div class="shuxian"></div>
+              <div id="demo-b" class="searchyuan">
+                <input id="search_txt" name="search" type="search" placeholder="请输入关键字" />
+              </div>
+               </form>
+            </div>
+         
+        
+          <ul class="topnav">
+               <li {if empty($cate['topid'])}class="current"{/if}><a href="/">首 页</a></li> 
+              {tp:nav name='nav' limit='10'}
+               <li><a href="{$nav['url']}">{$nav['cate_name']}</a></li> 
+                {if $nav['id'] == $cate['topid']}{/if}
+              {/tp:nav}
+
+          </ul>
+          <div style="clear: both"></div>
+          <div style="position:fixed;right:14%;top:1%; display: none;" class="showp"><button class="btn" style="color: #fff;">导航</button></div>
+          <div id="menu">
+              <div class="f1">
+                  <ul>
+                      <li class="">
+                          <a href="./index.html" class="">首页</a>
+                      </li>
+                      <li class="hasChild">
+                        <a href="#">新闻资讯</a>
+                        <div class="f2">
+                          <ul>
+                            <li><a href="{tp:cate id='30' type='url'/}">{tp:cate id="30" type="cate_name"}</a></li>
+                            <li><a href="{tp:cate id='31' type='url'/}">{tp:cate id="31" type="cate_name"}</a></li>
+                            <li><a href="{tp:cate id='37' type='url'/}">{tp:cate id="37" type="cate_name"}</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="hasChild">
+                        <a href="#">服务支持</a>
+                        <div class="f2">
+                          <ul>
+                            <li><a href="{tp:cate id='32' type='url'/}">{tp:cate id="32" type="cate_name"}</a></li>
+                            <li><a href="{tp:cate id='33' type='url'/}">{tp:cate id="33" type="cate_name"}</a></li>
+                            <li><a href="{tp:cate id='34' type='url'/}">{tp:cate id="34" type="cate_name"}</a></li>
+                            <li><a href="{tp:cate id='35' type='url'/}">{tp:cate id="35" type="cate_name"}</a></li>
+                            <li><a href="{tp:cate id='36' type='url'/}">{tp:cate id="36" type="cate_name"}</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                        {tp:nav name='nav'}
+                         {if $key eq 0}
+                      <li class="hasChild">
+                          <a href="#">{$nav['cate_name']}</a>
+                          <div class="f2">
+                            <ul>
+                                <li><a href="{tp:cate id='23' type='url'/}">{tp:cate id="23" type="cate_name"}</a></li>
+                                <li><a href="{tp:cate id='24' type='url'/}">{tp:cate id="24" type="cate_name"}</a></li>
+                                <li><a href="{tp:cate id='25' type='url'/}">{tp:cate id="25" type="cate_name"}</a></li>
+                                <li><a href="{tp:cate id='26' type='url'/}">{tp:cate id="26" type="cate_name"}</a></li>
+                                <li><a href="{tp:cate id='27' type='url'/}">{tp:cate id="27" type="cate_name"}</a></li>
+                                <li><a href="{tp:cate id='28' type='url'/}">{tp:cate id="28" type="cate_name"}</a></li>
+                                <li><a href="{tp:cate id='29' type='url'/}">{tp:cate id="29" type="cate_name"}</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                        {/if}
+                        {/tp:nav}
+                      <!-- <li class=""><a href="{$nav['url']}">{$nav['cate_name']}</a></li> -->
+                       <li><a href="{tp:cate id='2' type='url'/}">{tp:cate id="2" type="cate_name"}</a></li>
+                       <li><a href="{tp:cate id='15' type='url'/}">{tp:cate id="15" type="cate_name"}</a></li>
+                       <li><a href="{tp:cate id='13' type='url'/}">{tp:cate id="13" type="cate_name"}</a></li>
+                    
+                    
+                  </ul>
+              </div>
+          </div>

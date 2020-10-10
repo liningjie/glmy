@@ -1,0 +1,359 @@
+body {
+  font-size: 14px;
+}
+
+.bg1 {
+  height: 600px;
+  width: 100%;
+  background: url(../../img/about/2.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.bg1 .topwenzi {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-align: left;
+  color: #555555;
+}
+.bg1 .topwenzi div:first-child {
+  font-size: 60px;
+  font-weight: 600;
+}
+.bg1 .topwenzi div:nth-child(2) {
+  font-size: 30px;
+}
+.bg1 .topwenzi div:last-child {
+  font-size: 36px;
+  letter-spacing: 6px;
+}
+/*.bg1 .center {
+        width: 1200px;
+        height: 500px;
+        box-shadow: darkgrey 0px 6px 20px 3px;
+        border-radius: 8px;
+        margin: 0 auto;
+        background: #fff;
+        margin-top: 200px;
+    }
+
+    .bg1 .mingzi {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+        .bg1 .mingzi div:first-child {
+            font-size: 24px;
+            line-height: 26px;
+        }
+
+        .bg1 .mingzi div:last-child {
+            color: #888;
+        }
+
+    .bg1 .content {
+        margin-top: 20px;
+        padding: 0 60px;
+    }
+
+        .bg1 .content p {
+            margin-bottom: 5px;
+            text-indent: 28px
+        }
+
+    .bg1 .bottom {
+        display: flex;
+        width: 800px;
+        margin: 60px auto;
+        justify-content: space-between;
+    }
+
+        .bg1 .bottom .santu div {
+            text-align: center;
+        }*/
+
+.bgabout {
+  width: 100%;
+  height: 550px;
+  background: url(../../img/about/6.png) right top no-repeat;
+  background-size: auto 100%;
+}
+.bgabout .tongbox {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.bgabout .left {
+  width: 700px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.bgabout .left .neibox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 400px;
+}
+.bgabout .left .neibox .tit {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bgabout .left .neibox .content p {
+  text-indent: 28px;
+  color: #333;
+}
+.bgabout .left .neibox .tit div:first-child {
+  font-size: 20px;
+  line-height: 24px;
+}
+.bgabout .right {
+  float: right;
+  width: 500px;
+  position: relative;
+  height: 100%;
+}
+.bgabout .right .neibox {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 350px;
+}
+.bgabout .right .neibox img {
+  border: 30px solid rgba(255, 255, 255, 0.1);
+}
+.biaoji {
+  display: inline-block;
+  width: 5px;
+  height: 40px;
+  background: #0852a2;
+  position: relative;
+}
+
+.biaoji span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: #de465f;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.name div:first-child {
+  font-size: 20px;
+  line-height: 24px;
+}
+.bg2 {
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+}
+.bg2 .rfloat {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: url(../../img/about/4.png) left top no-repeat;
+  background-size: auto 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.bg2 .rfloat .yi {
+  width: 800px;
+  float: right;
+}
+.bg2 .rfloat .left {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.bg2 .rfloat .left p {
+  text-indent: 28px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.bg2 .rfloat .swiperbox {
+  float: left;
+  width: 900px;
+  height: 300px;
+  margin-top: 30px;
+}
+.swpneirongbox {
+  float: right;
+  width: 250px;
+  margin-top: 30px;
+}
+.swpneirongbox p {
+  text-indent: 28px;
+}
+.jianjie {
+  text-indent: 28px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.bg2 .rfloat .swiper-container {
+  /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+  width: 100%;
+}
+
+.bg2 .rfloat .swiper-container .swiper-slide {
+  position: relative;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 220px;
+  background: #fff;
+}
+
+.bg2 .rfloat .swiper-container .swiper-slide .img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+.bg3 {
+  background: url(../../img/about/3.png) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 500px;
+}
+
+.bg3 .center {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.bg3 .center .left {
+  float: left;
+  width: 550px;
+  margin-top: 50px;
+}
+.bg3 .center .right {
+  float: right;
+  width: 600px;
+  color: #fff;
+  margin-top: 30px;
+}
+.bg3 .center .right p {
+  /*margin-bottom: 5px;*/
+}
+.bg4 .center {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+p {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .bg1 {
+    height: 300px !important;
+  }
+  .bg1 .topwenzi div:first-child {
+    font-size: 30px;
+  }
+  .bg1 .topwenzi div:nth-child(2) {
+    font-size: 20px;
+  }
+  .bg1 .topwenzi div:last-child {
+    font-size: 25px;
+  }
+  .bg1 .topwenzi {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bgabout {
+    background: rgba(255, 255, 255);
+
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bgabout .right {
+    width: 100%;
+    height: 0;
+  }
+  .bgabout .left {
+    width: 100%;
+  }
+  .bgabout .left .neibox {
+    width: 100%;
+
+    height: 100%;
+  }
+  .bgabout .right .neibox {
+    right: 0px;
+    width: 100%;
+    top: 30px;
+  }
+  .bgabout .right .neibox > img {
+    width: 375px;
+    border: none;
+  }
+  .bgabout .tongbox {
+    width: 100%;
+  }
+
+  .bg2 {
+    margin-top: 168px;
+  }
+  .bg2 .rfloat {
+    width: 100%;
+  }
+  .bg2 .rfloat .yi {
+    width: 100%;
+  }
+  .swpneirongbox {
+    display: none;
+  }
+
+  .bg2 .rfloat .swiperbox {
+    display: none;
+  }
+  .swiper-container1 .swiper-slide {
+    text-align: center;
+  }
+  .swiper-container1 {
+    margin-top: -120px;
+    overflow: hidden;
+    height: 200px;
+  }
+  .bg3 {
+    margin-top: 100px;
+    height: 115%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .bg3 .center {
+    width: 100%;
+  }
+  .bg3 .center .left {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .bg3 .center .right {
+    width: 100%;
+  }
+  .bg4 .center {
+    width: 100%;
+  }
+}

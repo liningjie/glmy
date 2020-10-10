@@ -1,0 +1,80 @@
+      <section class="space-sm cxfooter">
+        <div class="pjfrow">
+          <ul>
+            <li>
+              <div class="zjhz" style="width: 90%">
+                <div class="cxleft"><i class="iconfont icon-dianhua"></i></div>
+                <div
+                  class="cxleft diyige"
+                  style="margin-right: 10px; line-height: 20px"
+                >
+                  <p>国内</p>
+                  <p>{$system.domestic_tel}</p>
+                  <p>{$system.domestic_tel2}</p>
+                </div>
+                <div class="cxleft diyige" style="line-height: 20px">
+                  <p>国际</p>
+                  <p>{$system.International_tel}</p>
+                  <p>{$system.International_tel2}</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="zjhz" style="width: 98%">
+                <div class="cxleft"><i class="iconfont icon-dizhi"></i></div>
+                <div class="cxleft">
+                  <div class="kaozuo">ADDRESSBR</div>
+                  <p>{$system.address}</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="zjhz" style="width: 55%">
+                <div class="cxleft">
+                  <i class="iconfont icon-bangdingyouxiang"></i>
+                </div>
+                <div class="cxleft">
+                  <div class="kaozuo">EMAIL</div>
+                  <p>{$system.email}</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="zjhz">
+                <div class="cxleft">
+                  <i class="iconfont icon-chuanzhen"></i>
+                </div>
+                <div class="cxleft">
+                  <div class="kaozuo">FAX</div>
+                  <p>{$system.fax}</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="yqlj">
+          <span>友情链接：</span>
+          {tp:link name='link'}
+          <a href="{$link.url}" target="_blank"
+            > {$link.name}</a
+          >
+          {/tp:link}
+        </div>
+        <div class="indfooter">
+          <div>
+            - 版权所有：无锡创想分析仪器有限公司 {$system.icp}
+            <p>全国统一免费咨询热线：{$system.tel} <br /></p>
+            地址：
+            <p>{$system.address}</p>
+          </div>
+
+          <div>
+           {$system.copyright}-&nbsp&nbsp技术支持：<a
+              class="maiwei"
+              target="_blank"
+              href="http://wxjui.com/"
+              >君亿视觉</a
+            >
+          </div>
+        </div>
+      </section>

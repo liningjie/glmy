@@ -1,0 +1,533 @@
+@media only screen and (max-width: 384px) {
+  /* 推荐仪器展示 */
+  .tuijian {
+    display: none;
+  }
+  .swiper_content {
+    display: block !important;
+  }
+  .tuijiantop {
+    margin-top: 15%;
+  }
+  /* 推荐仪器展示 over*/
+}
+@media only screen and (max-width: 320px) {
+  /* 推荐仪器展示 */
+  .tuijian {
+    display: none;
+  }
+  .swiper_content {
+    display: block !important;
+  }
+  .tuijiantop {
+    margin-top: 14%;
+  }
+  /* 推荐仪器展示 over*/
+}
+@media only screen and (max-width: 480px) {
+  /* 头部 */
+  .topnav {
+    display: none !important;
+  }
+  .martop .logo {
+    margin-left: 27px !important;
+    margin-top: 10px !important;
+  }
+  .martop .logo img {
+    width: 70% !important;
+  }
+  .navsearch {
+    display: none !important;
+  }
+  .showp {
+    display: block !important;
+  }
+  /* 头部  over*/
+  /* banner  */
+
+  .bannercontent img {
+    height: 300px;
+  }
+  .banner_title p {
+    display: none;
+  }
+  .banner_title h1 {
+    font-size: 17px !important;
+  }
+  .banner_title > span {
+    font-size: 13px !important;
+  }
+  .banner_title h1 > span {
+    font-weight: 600;
+  }
+  /* banner over  */
+  /* 推荐仪器展示 */
+  .tuijiantop {
+    margin-top: 15%;
+  }
+  .swiper_content {
+    display: block !important;
+  }
+  .tuijian {
+    display: none;
+  }
+  /* 推荐仪器展示 over*/
+  .next1,
+  .next2,
+  .next3,
+  .next4,
+  .next5,
+  .next6,
+  .next7 {
+    display: none !important;
+  }
+  .prev1,
+  .prev2,
+  .prev3,
+  .prev4,
+  .prev5,
+  .prev6,
+  .prev7 {
+    display: none !important;
+  }
+  /* 产品中心 */
+
+  /* #tabslider .tab li {
+    display: none !important;
+  }
+  .pc-banner .swipertong1 {
+    width: 100% !important;
+  }
+  .swiper-wrapper1 > div {
+    width: 33% !important;
+  }
+  
+  .pc-banner .swiper-slide-active,
+  .swiper-slide-duplicate-active {
+    padding: 0;
+  }
+  #tabslider .tabsbg {
+    height: 220px;
+  }
+  #tabslider .tab {
+    height: 0px;
+  }
+  .pc-banner .swipertong1 {
+    margin: 0 auto;
+  } */
+  /* 产品中心over */
+  /* 企业新闻 */
+  .tab2,
+  .tab3 {
+    display: none;
+  }
+  .news_content {
+    padding-top: 0px !important;
+  }
+  .news_title {
+    text-align: center;
+  }
+  .news_title h1 {
+    color: #fff;
+    margin-top: -13px;
+  }
+  .news_title i {
+    font-size: 50px;
+  }
+  .slidnew {
+    width: 100%;
+    background: rgba(61, 138, 179, 0);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 7%;
+  }
+  .slidnew li i {
+    margin-right: 0 !important;
+  }
+  .neirong1 li {
+    margin-bottom: -13px;
+  }
+  .new_tt > i {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 70%;
+    color: #fff !important;
+    margin-right: 0px;
+  }
+  .new1_item {
+    width: 100%;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-left: 21px;
+    color: #ccc;
+  }
+  .more1 {
+    display: block;
+    width: 30%;
+    background-color: #07478e;
+    text-align: center;
+    padding: 3% 0;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+  }
+  .lll {
+    display: none;
+  }
+  .inews {
+    padding-top: 15%;
+    height: 100%;
+    padding-bottom: 15%;
+  }
+  /* 企业新闻over */
+  /* bottom */
+  .cxfooter .pjfrow {
+    width: 100% !important;
+  }
+  .cxfooter .yqlj {
+    width: 100% !important;
+  }
+  .cxfooter .pjfrow ul li {
+    display: block !important;
+    width: 100% !important;
+    border: none !important;
+  }
+  .zjhz {
+    width: 98% !important;
+  }
+  .cxfooter {
+    padding-bottom: 0px;
+  }
+  /* bottomover; */
+
+  /* 产品中心 */
+  .neibox {
+    width: 100%;
+  }
+  .bg2 .pcleft {
+    width: 100%;
+  }
+  .bg2 .pcright {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .qiana {
+    margin-top: 0;
+  }
+  .cpcontent {
+  }
+  .bg1 .pcleft {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .bg1 .pcright {
+    width: 100%;
+  }
+  .youbian {
+    display: none;
+  }
+  .tabtop {
+    display: none;
+  }
+  /* 产品中心over  */
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  /* 头部 */
+  .navsearch {
+    display: none !important;
+  }
+  .topnav {
+    display: none;
+  }
+  /* 头部  over*/
+  /* 推荐仪器展示 */
+  .tuijiantop {
+    margin-top: 15%;
+  }
+  .swiper_content {
+    display: block !important;
+  }
+  .tuijian {
+    display: none;
+  }
+  /* 推荐仪器展示 over*/
+  /* 产品中心 */
+  /* #tabslider .tab li {
+    
+    display: none !important;
+  }
+  .next1,
+  .next2,
+  .next3,
+  .next4,
+  .next5,
+  .next6,
+  .next7 {
+    display: none !important;
+  }
+  .prev1,
+  .prev2,
+  .prev3,
+  .prev4,
+  .prev5,
+  .prev6,
+  .prev7 {
+    display: none !important;
+  }
+  .pc-banner .swipertong1 {
+    width: 100% !important;
+  }
+  .swiper-wrapper1 > div {
+    width: 250px !important;
+  } */
+
+  /* 产品中心over */
+  /* 企业新闻 */
+  .tab2,
+  .tab3 {
+    display: none;
+  }
+  .slidnew {
+    width: 100%;
+  }
+  .lll {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 头部 */
+  .downcontent {
+    display: none;
+  }
+  .topnav li {
+    width: 60px !important;
+  }
+  /* .navsearch {
+    display: none !important;
+  }
+  .topnav {
+    display: none;
+  }
+  .navsearch {
+    display: none !important;
+  } */
+  /* 头部  over*/
+  /* 推荐仪器展示 */
+  .tuijiantop {
+    margin-top: 15%;
+  }
+  .swiper_content {
+    display: block !important;
+  }
+  .tuijian {
+    display: none;
+  }
+  /* 推荐仪器展示 over*/
+  /* 产品中心 */
+  /* #tabslider .tab li {
+    width: 9%;
+    border: none;
+  }
+  .next1,
+  .next2,
+  .next3,
+  .next4,
+  .next5,
+  .next6,
+  .next7 {
+    display: none !important;
+  }
+  .prev1,
+  .prev2,
+  .prev3,
+  .prev4,
+  .prev5,
+  .prev6,
+  .prev7 {
+    display: none !important;
+  }
+  .pc-banner .swipertong1 {
+    width: 100% !important;
+  } */
+  /* 产品中心over */
+  /* 企业新闻 */
+  .tab2,
+  .tab3 {
+    display: none;
+  }
+  .slidnew {
+    width: 100%;
+    padding: 40px 24px;
+  }
+  .lll {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* 头部 */
+  .downcontent {
+    display: none;
+  }
+  .topnav li {
+    width: 90px !important;
+  }
+  /* 头部 overover*/
+  /* 推荐仪器展示 */
+  .zhongjianbg {
+    height: 272px;
+  }
+  .zongbox {
+    width: 840px;
+  }
+  .zhongjian {
+    width: 421px;
+    height: 343px;
+  }
+  .zongbox {
+    transform: translate(-50%, -31%);
+  }
+  .zhongjian .left {
+    padding: 4px 0 0 17px;
+  }
+  .zhongjian .left div:first-child {
+    font-size: 19px;
+  }
+  .zhongjian .left div:last-child {
+    font-size: 23px;
+  }
+  .textbox div:last-child {
+    margin-top: 29px;
+  }
+  .zhongjian .right {
+    width: 297px;
+    height: 309px;
+    margin-right: 56px;
+    margin-top: -41px;
+  }
+  .textbox .biaoti {
+    margin-top: 51px;
+  }
+  /* 推荐仪器展示 over*/
+  /* 产品中心 */
+  /* .pc-banner .swipertong1 {
+    width: 624px !important;
+  }
+  .swiper-wrapper1 > div {
+    width: 210px !important;
+  } */
+  /* 产品中心over */
+  /* 企业新闻 */
+  .dnone {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+@media (min-width: 1201px) and (max-width: 1349px) {
+  /* 头部 */
+  .downcontent {
+    display: none;
+  }
+  .topnav li {
+    width: 100px !important;
+  }
+  /* 头部 over*/
+  /* 推荐仪器展示 */
+  .zongbox {
+    width: 1030px;
+  }
+  .zhongjian {
+    width: 598px;
+    height: 454px;
+  }
+  .zongbox {
+    transform: translate(-50%, -41%);
+  }
+  .textbox div:last-child {
+    margin-top: 29px;
+  }
+  /* 推荐仪器展示 over*/
+  /* 产品中心 */
+  /* .pc-banner .swipertong1 {
+    width: 800px !important;
+  }
+  .swiper-wrapper1 > div {
+    width: 266px !important;
+  } */
+  /* 产品中心over */
+  /* 企业新闻 */
+  .dnone {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+@media (min-width: 1350px) and (max-width: 1559px) {
+  /* 头部 */
+  .downcontent {
+    display: none;
+  }
+  /* 头部 over*/
+  /* 产品中心 */
+  /* .pc-banner .swipertong1 {
+    width: 965px !important;
+  } */
+  /* 产品中心over */
+  /* 企业新闻 */
+  .dnone {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+@media (min-width: 1600px) and (max-width: 1800px) {
+  /* 头部 */
+  .downcontent {
+    display: none;
+  }
+  /* 头部 over*/
+  /* 推荐仪器展示 */
+
+  /* 推荐仪器展示 over*/
+  /* 企业新闻 */
+  .dnone {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+@media (max-width: 1920px) and (min-width: 1801px) {
+  /* 头部 */
+  .downcontent {
+    display: none;
+  }
+  /* 头部 over*/
+  /* 推荐仪器展示 */
+
+  /* 推荐仪器展示 over*/
+  /* 企业新闻 */
+  .dnone {
+    display: none;
+  }
+  /* 企业新闻over */
+}
+.leftMenu {
+  z-index: 999 !important;
+}
+.menu-dark-backdrop {
+  /* display: none !important; */
+  z-index: 888 !important;
+}
+#menu > div > ul li a {
+  color: #000;
+  opacity: 0;
+}
+.op1 {
+  opacity: 1 !important;
+}
